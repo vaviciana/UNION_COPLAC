@@ -1,0 +1,167 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*HERO SECTION*/
+.hero_section {
+  position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+}
+.hero_section #background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero_section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+.hero_section .texto_hero {
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  text-align: end;
+}
+
+.boton {
+  background-color: #1B3240;
+}
+
+.grilla-instalaciones {
+  height: 100vh;
+  width: auto;
+  max-width: 100vw; /* No más ancho que la pantalla */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 columnas de igual tamaño */
+  grid-template-rows: repeat(12, auto); /* 12 filas de igual tamaño */
+  grid-template-areas: "inst-1 inst-1 inst-4 inst-4 inst-4 inst-6 inst-6 inst-8 inst-8 inst-8 inst-10 inst-10" "inst-1 inst-1 inst-4 inst-4 inst-4 inst-6 inst-6 inst-8 inst-8 inst-8 inst-10 inst-10" "inst-1 inst-1 inst-4 inst-4 inst-4 inst-6 inst-6 inst-8 inst-8 inst-8 inst-10 inst-10" "inst-2 inst-2 inst-4 inst-4 inst-4 inst-6 inst-6 inst-8 inst-8 inst-8 inst-10 inst-10" "inst-2 inst-2 inst-4 inst-4 inst-4 inst-7 inst-7 inst-8 inst-8 inst-8 inst-10 inst-10" "inst-2 inst-2 inst-5 inst-5 inst-5 inst-7 inst-7 inst-8 inst-8 inst-8 inst-10 inst-10" "inst-2 inst-2 inst-5 inst-5 inst-5 inst-7 inst-7 inst-9 inst-9 inst-9 inst-10 inst-10" "inst-2 inst-2 inst-5 inst-5 inst-5 inst-7 inst-7 inst-9 inst-9 inst-9 inst-10 inst-10" "inst-2 inst-2 inst-5 inst-5 inst-5 inst-7 inst-7 inst-9 inst-9 inst-9 inst-11 inst-11" "inst-3 inst-3 inst-5 inst-5 inst-5 inst-7 inst-7 inst-9 inst-9 inst-9 inst-11 inst-11" "inst-3 inst-3 inst-5 inst-5 inst-5 inst-7 inst-7 inst-9 inst-9 inst-9 inst-11 inst-11" "inst-3 inst-3 inst-5 inst-5 inst-5 inst-7 inst-7 inst-9 inst-9 inst-9 inst-11 inst-11";
+}
+
+.grilla-1 {
+  grid-area: inst-1;
+}
+
+.grilla-2 {
+  grid-area: inst-2;
+}
+
+.grilla-3 {
+  grid-area: inst-3;
+}
+
+.grilla-4 {
+  grid-area: inst-4;
+}
+
+.grilla-5 {
+  grid-area: inst-5;
+}
+
+.grilla-6 {
+  grid-area: inst-6;
+}
+
+.grilla-7 {
+  grid-area: inst-7;
+}
+
+.grilla-8 {
+  grid-area: inst-8;
+}
+
+.grilla-9 {
+  grid-area: inst-9;
+}
+
+.grilla-10 {
+  grid-area: inst-10;
+}
+
+.grilla-11 {
+  grid-area: inst-11;
+}
+
+.grilla-instalaciones div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .grilla-instalaciones {
+    grid-template-columns: repeat(6, 1fr); /* 12 columnas de igual tamaño */
+    grid-template-rows: repeat(20, auto); /* 12 filas de igual tamaño */
+    grid-template-areas: "inst-1 inst-1 inst-2 inst-2 inst-2 inst-2" "inst-1 inst-1 inst-2 inst-2 inst-2 inst-2" "inst-3 inst-3 inst-2 inst-2 inst-2 inst-2" "inst-3 inst-3 inst-2 inst-2 inst-2 inst-2" "inst-3 inst-3 inst-4 inst-4 inst-5 inst-5" "inst-3 inst-3 inst-4 inst-4 inst-5 inst-5" "inst-3 inst-3 inst-4 inst-4 inst-5 inst-5" "inst-3 inst-3 inst-4 inst-4 inst-5 inst-5" "inst-6 inst-6 inst-6 inst-7 inst-7 inst-7" "inst-6 inst-6 inst-6 inst-7 inst-7 inst-7" "inst-6 inst-6 inst-6 inst-7 inst-7 inst-7" "inst-6 inst-6 inst-6 inst-7 inst-7 inst-7" "inst-8 inst-8 inst-9 inst-9 inst-10 inst-10" "inst-8 inst-8 inst-9 inst-9 inst-10 inst-10" "inst-8 inst-8 inst-9 inst-9 inst-10 inst-10" "inst-8 inst-8 inst-9 inst-9 inst-10 inst-10" "inst-8 inst-8 inst-9 inst-9 inst-10 inst-10" "inst-11 inst-11 inst-9 inst-9 inst-10 inst-10" "inst-11 inst-11 inst-9 inst-9 inst-10 inst-10" "inst-11 inst-11 inst-9 inst-9 inst-10 inst-10";
+  }
+}
+.testimonial-card {
+  background: #1B3240;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+  margin: 20px;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  font-style: italic;
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: white;
+}
+
+.testimonial-role {
+  font-size: 12px;
+  color: white;
+}
+
+.company-name {
+  color: white;
+  font-weight: bold;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  font-size: 80px;
+  color: #D99923;
+}
+
+/*# sourceMappingURL=style.css.map */
