@@ -44,6 +44,7 @@ $color-secundario:#D99923;
 
 .boton{
     background-color: $color-primario;
+    color: white;
 }
 
 .grilla-instalaciones {
@@ -165,9 +166,32 @@ $color-secundario:#D99923;
     }
 }
 
+/*CONTACTO*/
 
+.formulario{
+    background-color:rgba(128, 128, 128, 0.433);
+    box-shadow: 2px 2px 5px gray;
+    width: 75vw;
+    .lineas_formulario{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        justify-content: space-evenly;
+        .label{
+            width: 100%;
+            padding-bottom: 2px;
+        }
+        .cuadro_texto{
+            width: 100%;
+        }
+    }
+}
 
-
+.productos_desarrollado{
+    height: 67vh;
+    display: flex;
+    align-items:flex-end;
+}
 
 
 
