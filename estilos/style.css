@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+footer {
+  position: sticky;
+  z-index: 9999 !important;
+  background-color: rgb(246, 246, 246);
+}
+
 /*HERO SECTION*/
 .hero_section {
   position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
@@ -183,9 +189,38 @@
 }
 
 .productos_desarrollado {
-  height: 67vh;
+  height: 100vh;
   display: flex;
   align-items: flex-end;
+}
+
+@media (min-width: 500px) {
+  .productos_desarrollado {
+    height: 85vh;
+    align-items: end;
+  }
+}
+/*QUIENES SOMOS*/
+.imagen_obrero {
+  object-fit: cover;
+  width: 50vw;
+  height: 100vh;
+  z-index: 0.95;
+  position: relative;
+  left: -100%;
+  top: -100%;
+  opacity: 0.5;
+}
+
+.caja_valores {
+  z-index: -1;
+  width: 100vw;
+}
+.caja_valores .contenedor_caja_valores {
+  background-color: rgb(246, 246, 246);
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.633);
 }
 
 /*# sourceMappingURL=style.css.map */
