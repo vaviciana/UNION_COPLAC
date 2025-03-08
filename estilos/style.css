@@ -189,14 +189,12 @@ footer {
 }
 
 .productos_desarrollado {
-  height: 100vh;
   display: flex;
   align-items: flex-end;
 }
 
 @media (min-width: 500px) {
   .productos_desarrollado {
-    height: 85vh;
     align-items: end;
   }
 }
