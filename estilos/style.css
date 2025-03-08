@@ -201,26 +201,44 @@ footer {
   }
 }
 /*QUIENES SOMOS*/
-.imagen_obrero {
+.quienes-somos {
+  position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
+  justify-content: center;
+  text-align: center;
+}
+.quienes-somos #background-video_quienes-somos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  width: 50vw;
-  height: 100vh;
-  z-index: 0.95;
+  z-index: -1;
+}
+.quienes-somos .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -0.95;
+}
+.quienes-somos .contenedor_valores {
   position: relative;
-  left: -100%;
-  top: -100%;
-  opacity: 0.5;
+  z-index: 1;
 }
 
-.caja_valores {
-  z-index: -1;
-  width: 100vw;
-}
 .caja_valores .contenedor_caja_valores {
   background-color: rgb(246, 246, 246);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   margin: 10px;
   box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.633);
+  min-height: 50vh;
 }
 
 /*# sourceMappingURL=style.css.map */
