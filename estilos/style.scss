@@ -84,7 +84,7 @@ footer{
 
 .hero_section {
     position: relative; /* Asegurar que los elementos hijos absolutos se posicionen dentro */
-    height: 100vh;
+    height: 90vh;
     color: white;
     display: flex;
     align-items: end;
@@ -249,7 +249,7 @@ footer{
 .formulario{
     background-color:rgba(128, 128, 128, 0.433);
     box-shadow: 2px 2px 5px gray;
-    width: 75vw;
+    max-width: 600px;
     .lineas_formulario{
         display: flex;
         flex-direction: column;
