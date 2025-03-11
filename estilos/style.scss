@@ -291,6 +291,8 @@ footer{
     }
 }
 
+/*PRODUCTOS*/
+
 .productos_desarrollado{
     display: flex;
     align-items:flex-end;
@@ -300,6 +302,15 @@ footer{
     .productos_desarrollado{
         align-items: end;
     }
+}
+
+.tarjetas-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 20%;
+    min-height: 100%;
 }
 
 /*QUIENES SOMOS*/
@@ -342,6 +353,20 @@ footer{
         box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.633);
         min-height: 50vh;
     }
+}
+
+.icono_quienessomos{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid $color-primario;
+    border-radius: 50%;
+    img{
+        max-width: 80px;
+        min-width: 80px;
+        max-height: 80px;
+        min-height: 80px;
+        object-fit: contain;
+        }
 }
 
 
