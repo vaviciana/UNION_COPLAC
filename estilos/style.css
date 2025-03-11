@@ -4,10 +4,80 @@
   margin: 0;
 }
 
+/*FOOTER*/
 footer {
   position: sticky;
   z-index: 9999 !important;
   background-color: rgb(246, 246, 246);
+}
+
+.politica_legal {
+  font-size: 10px;
+  text-decoration: none;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+
+/*POLÍTICA DE COOKIES*/
+.cookie-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  color: #1B3240;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 999;
+}
+
+.cookie-container button {
+  background: #1B3240;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cookie-container button:hover {
+  background: white;
+  color: #1B3240;
+  border: 1px solid #1B3240;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reject-btn {
+  background: #1B3240;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.reject-btn:hover {
+  background: white;
+  color: #1B3240;
+  border: 1px solid #1B3240;
 }
 
 /*HERO SECTION*/
@@ -48,6 +118,10 @@ footer {
 .boton {
   background-color: #1B3240;
   color: white;
+}
+.boton:hover {
+  background-color: white;
+  color: #1B3240;
 }
 
 .grilla-instalaciones {
